@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Snap it Reborn</title>
+    <meta name="mobile-web-app-capable" content="yes">
+<link rel="manifest" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/14907/manifest.json">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.css'>
+
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      #target {
+	width:50%;
+	margin:20px auto;
+}
+
+canvas {
+	width:250px;
+	height:250px;
+}
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    <form id="target" action="https://api.teambasementsystems.com/image/upload" method="post" enctype="multipart/form-data">
+
+	<div class="upload">
+		<label>Job ID:
+            <input type="text" id="hold-group" name="hold-group">
+		</label>
+	</div>
+
+	<div class="upload">
+		<label>Select file to upload:
+            <input type="file" id="hold-upload" name="upload" class="inputfile">
+		</label>
+	</div>
+	<div>
+		<input type="hidden" name="accessToken" value="1147-e6357971ca5cf0c77f781712ea6350a1">
+		<input type="hidden" name="company" value="1015">
+		<input type="hidden" name="group" id="group" value="">
+		<input type="submit" value="Send To TBS">
+
+	</div>
+</form>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

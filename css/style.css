@@ -1,0 +1,9 @@
+#target {
+	width:50%;
+	margin:20px auto;
+}
+
+canvas {
+	width:250px;
+	height:250px;
+}
